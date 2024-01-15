@@ -1,0 +1,23 @@
+### Data exploration, cleaning, and transformation
+•	Opened 202301-divvy-tripdata
+•	Removed duplicates
+•	Trimmed data contained in each column
+•	Sorted sheet based on started_at column, from least to most recent
+•	Formatted columns H and J as text
+•	Formatted columns K, L, M, and N as decimal numbers
+•	Created trip_duration column (column E)
+•	Calculated trip_duration
+•	Created day_of_week column (column F)
+•	Calculated day_of_week
+•	Added filters
+•	Checked for inconsistent values in each column (null values found in columns G, H, I, and J, also there are more than 3,000 rows with a trip duration of 0 and a few rows with negative values)
+•	Filtered for negative values (the values in the ended_at column seem to be less than the values in the started_at column)
+•	Inverted the values in the started_at and ended_at columns only for the respective rows containing negative values in the trip_duration column
+•	Updated the trip_duration formula
+•	Removed filters
+•	These steps were repeated for the rest of the tables respective to each remaining month (no new steps performed since the data in the other tables contained similar errors)
+### Data Analysis
+•	Conducted a descriptive statistics analysis on the trip_duration and day_of_week columns for each month
+•	Calculated the average trip duration per day of week for members and casual riders for each month using a pivot table
+•	Calculated the average rides per day of week for members and casual riders for each month using a pivot table
+•	Calculated the amount of each bike type used by members and casual riders for each month using a pivot table
